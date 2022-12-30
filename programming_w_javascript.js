@@ -43,13 +43,6 @@ function score() { //local scope existing within the function name() {}
     console.log(num2)
 }
 
-
-let num3 = '7'; //global scope
-
-if (num4 == '17') {  //block scope
-    let num4 = 17   
-}
-
 //object-oriented programming shoe purchase calculator
 var purchase1 = {
     shoes: 100,
@@ -83,3 +76,50 @@ class Cars{
 }
 const car1 = new Car("blue", 120)
 car1.turboOn();
+
+// forEach method with arrays
+const fruits = ['kiwi', 'mango', 'apple', 'pear'];
+function appendIndex(fruit,index) {
+    console.log(`${index}. ${fruit}`)
+}
+fruits.forEach(appendIndex);
+
+// filter() method with arrays
+const nums = [0,10,20,30,40,50];
+nums.filter(function(num) {
+    return num > 20;
+})
+
+// map() method with arrays
+[0,10,20,30,40,50].map (function (num){
+    return num/10
+})
+
+// Map constructor
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The runner-up");
+bestBoxers.set(3, "The Third Place");
+console.log(bestBoxers);
+    // get() method to get a specific value
+bestBoxers.get(1);
+
+    // Set constructor to filter array for uniue members
+const repetitiveFruits = ['apple', 'pear','apple', 'pear', 'plum', 'apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits);
+
+// Spread operator
+let top3 = [
+    "The Colosseum",
+    "Trevi Fountain",
+    "The Vatican City"
+];
+function showItinerary(place1, place2, place3) {
+    console.log("Visit " + place1);
+    console.log("Then visit " + place2);
+    console.log("Finish with a visit to " + place3);
+}
+showItinerary(...top3);
+
+// Rest operator

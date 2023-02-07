@@ -28,7 +28,7 @@ celebrateStyler('birthday')
 
 // Task 4
 function styleAndCelebrate(color, background,fontSize, txt, reason){
-    consoleStyler(color, background, fontSize, text);
+    consoleStyler(color, background, fontSize, txt);
     celebrateStyler(reason); 
 }
 
